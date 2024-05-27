@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./components/buttons";
 
 const messages = [
   "Learn React ⚛️",
@@ -41,7 +42,20 @@ function App() {
           </div>
 
           <div className="buttons">
-            <button
+            <Button 
+              bgColor={"#7950f2"}
+              color={"#fff"}
+              onClick={handlePrevious}
+              
+              
+            ><span>{"👈"}</span>Previous</Button>
+            <Button 
+              bgColor={"#7950f2"}
+              color={"#fff"}
+              onClick={handleNext}
+        
+            ><span>{"👉"}</span>Next</Button>
+            {/* <button
               onClick={handlePrevious}
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
             >
@@ -52,7 +66,7 @@ function App() {
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
             >
               Next
-            </button>
+            </button> */}
           </div>
         </div>
       )}
